@@ -1,0 +1,24 @@
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int[2] result;
+        int i=0;
+        int j=1;
+        if(nums.length>2){
+            while(i<nums.length){
+                j=i+1;
+                while(j<nums.length){
+                    if(nums[j]==target-nums[i]){
+                        result[0]=i;
+                        result[1]=j;
+                        return result;
+                    }
+                    ++j;
+                }
+                ++i;
+            }
+        }
+                       result[0]=i;
+                        result[1]=j;
+                        return result;
+    }
+}
